@@ -381,7 +381,7 @@ if (cardex.length) {
       };
     }
 
-    if (window.innerWidth <= 1024) {
+    if (window.innerWidth <= 767) {
       return {
         property: "width",
         collapsed: 65,
@@ -420,11 +420,19 @@ if (cardex.length) {
   }
 
   function toggleAccordionCard(card) {
-    if (card === activeCard) {
-      animateAccordionCard(card, false);
-      activeCard = null;
-      return;
-    }
+
+  // SAME CARD CLICK → DO NOTHING (keep open)
+  if (card === activeCard) return;
+
+  // CLOSE OLD
+  if (activeCard) {
+    animateAccordionCard(activeCard, false);
+  }
+
+  // OPEN NEW
+  animateAccordionCard(card, true);
+  activeCard = card;
+
 
     if (activeCard) {
       animateAccordionCard(activeCard, false);
@@ -433,6 +441,9 @@ if (cardex.length) {
     animateAccordionCard(card, true);
     activeCard = card;
   }
+
+
+
 
   function animateAccordionCard(card, isActive) {
     const { property, collapsed, expanded, closeDuration, openDuration } = getAccordionConfig();
@@ -457,21 +468,35 @@ if (cardex.length) {
   syncAccordionState();
 
   cardex.forEach((card) => {
+
+
+    // card.addEventListener("click", (event) => {
+    //   if (isInteractiveTarget(event)) return;
+
+    //   if (isMobileAccordion()) {
+    //     if (Date.now() < suppressMobileClickUntil) {
+    //       event.preventDefault();
+    //       return;
+    //     }
+
+    //     toggleAccordionCard(card);
+    //     return;
+    //   }
+
+    //   toggleAccordionCard(card);
+    // });
+
     card.addEventListener("click", (event) => {
-      if (isInteractiveTarget(event)) return;
+  if (isInteractiveTarget(event)) return;
 
-      if (isMobileAccordion()) {
-        if (Date.now() < suppressMobileClickUntil) {
-          event.preventDefault();
-          return;
-        }
+  // ❌ Mobile la click completely ignore
+  if (isMobileAccordion()) return;
 
-        toggleAccordionCard(card);
-        return;
-      }
+  // Desktop only
+  toggleAccordionCard(card);
+});
 
-      toggleAccordionCard(card);
-    });
+
 
     card.addEventListener(
       "pointerdown",
@@ -507,22 +532,27 @@ if (cardex.length) {
     card.addEventListener("pointercancel", resetMobilePointerState, { passive: true });
 
     card.addEventListener(
-      "pointerup",
-      (event) => {
-        if (!isMobileAccordion() || !mobilePointerState) return;
-        if (mobilePointerState.card !== card || mobilePointerState.pointerId !== event.pointerId) return;
+  "pointerup",
+  (event) => {
+    if (!isMobileAccordion()) return;
 
-        const shouldToggle = !mobilePointerState.moved && !isInteractiveTarget(event);
-        resetMobilePointerState();
+    if (!mobilePointerState) return;
+    if (mobilePointerState.card !== card) return;
 
-        if (!shouldToggle) return;
+    const moved = mobilePointerState.moved;
+    resetMobilePointerState();
 
-        suppressMobileClickUntil = Date.now() + 450;
-        event.preventDefault();
-        toggleAccordionCard(card);
-      },
-      { passive: false }
-    );
+    if (moved) return;
+
+    event.preventDefault();
+
+    // 🔥 TOGGLE SAME CARD
+    toggleAccordionCard(card);
+  },
+  { passive: false }
+);
+
+
 
     card.addEventListener("pointerleave", () => {
       if (!isMobileAccordion()) return;
