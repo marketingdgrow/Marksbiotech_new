@@ -3,460 +3,544 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>allograft</title>
-    <link rel="stylesheet" href="./nav.css"/>
-    <link rel="stylesheet" href="./allograft.css" />
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="./js/gsap.min.js"></script>
-  <script src="./js/ScrollTrigger.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <link rel="stylesheet" href="./responsive-global.css" />
-</head>
+    <!-- SEO Meta Tags -->
+    <title>Allograft - Rocky Mountain Tissue Bank USA | Marks Biotech</title>
+    <meta name="description" content="Explore Rocky Mountain Tissue Bank USA allograft solutions from Marks Biotech for sinus augmentation, socket preservation and advanced regenerative dentistry." />
+    <meta name="keywords" content="allograft, Rocky Mountain Tissue Bank, bone graft, sinus augmentation, socket preservation, Marks Biotech" />
+    <meta name="author" content="Marks Biotech" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Social SEO) -->
+    <meta property="og:title" content="Allograft - Rocky Mountain Tissue Bank USA | Marks Biotech" />
+    <meta property="og:description" content="Explore Rocky Mountain Tissue Bank USA allograft solutions from Marks Biotech for sinus augmentation, socket preservation and advanced regenerative dentistry." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marksbiotech.com/allograft.html" />
+    <meta property="og:image" content="./assets/imgs/marks-biotech-logo 1.webp" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://marksbiotech.com/allograft.html" />
+
+    <!-- Hero image preload (LCP boost) -->
+    <link rel="preload" as="image" href="./assets/imgs/di-1.webp" />
+
+    <style>
+      /* === CRITICAL ABOVE-THE-FOLD CSS === */
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { background: #fff; color: #222; }
+
+      .site-header { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+      .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+      .nav-top { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
+      .logo1 img { height: 48px; width: auto; display: block; }
+      .hamburger { display: none; font-size: 26px; cursor: pointer; }
+
+      /* Hero banner critical */
+      .top-banner-allo { background: #1a1a2e; color: #fff; text-align: center; padding: 60px 20px 40px; }
+      .top-banner-allo h1 { font-size: clamp(1.6rem, 4vw, 2.8rem); font-weight: 700; line-height: 1.2; }
+      .top-banner-allo h1 span { color: goldenrod; }
+
+      h1, h2, h3, h4 { color: #ea0202; }
+
+      /* Banner h1 stays white (dark bg) */
+      .top-banner-allo h1 { 
+        color: #fff; 
+      }
+      .top-banner-allo h1 span { 
+        color: goldenrod;
+       }
+
+      .about-footer h2,
+      .footer-col h4,
+      .about-footer-title h2 {color: #fff;}
+
+      /* Popup headings */
+      #popupForm h2 { color: #cf0303; }
+
+      /* Font swap for display font */
+      @font-face { font-display: swap; }
+
+      @media (max-width: 768px) {
+        .hamburger { display: block; }
+        .nav-main-menu { display: none; }
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Nunito:wght@400;600&display=swap" onload="this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Nunito:wght@400;600&display=swap" /></noscript>
+
+    <link rel="preload" href="./nav.css" as="style" onload="this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./nav.css" /></noscript>
+
+    <link rel="preload" href="./allograft.css" as="style" onload="this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./allograft.css" /></noscript>
+
+    <link rel="preload" href="./responsive-global.css" as="style" onload="this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./responsive-global.css" /></noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    </noscript>
+  </head>
+
   <body>
 
-    
-    <!-- HERO -->
-   
-    
-     
- 
- <header class="site-header">
-    <div class="nav-container">
+    <header class="site-header">
+      <div class="nav-container">
+        <div class="nav-top">
+          <div class="logo1">
+            <img
+              src="./assets/imgs/marks-biotech-logo 1.webp"
+              alt="Marks Biotech Logo"
+          
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
 
-      <div class="nav-top">
-
-        <div class="logo1">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
+          <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" tabindex="0">&#9776;</div>
         </div>
 
-        <div class="hamburger" id="hamburger"> ?
-
-        </div>
-      </div>
-
-
-      <ul class="nav-main-menu">
-        <div class="logo">
-          <img src="./assets/imgs/marks-biotech-logo 1.png" alt="" />
-        </div>
-        <li><a href="./index.html">Highlights</a></li>
-
-
-        <!-- ================= Dental Implantology ================= -->
-        <li class="has-mega mega-dental">
-          Dental Implantology<i class="fa-solid fa-angle-down"></i>
-
-          <div class="mega-menu">
-
-
-            <!-- COLUMN 2 -->
-            <div class="mega-column column-2" id="col2">
-              <ul>
-                <li data-img="heritage"><a href="https://b-and-b-india.netlify.app/heritage">Heritage </a></li>
-                <li id="unique" data-img="unique"><a href="#col3">Unique Design <i class="fa-solid fa-angle-right"></i></a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/subperiosteal">Customized
-                    Implants</a></li>
-                <li data-img="custom"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-                <li data-img="guided"><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Digital Guided
-                    Surgery</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/surgicalkit">Surgical Kits</a></li>
-                <li data-img="kits"><a href="https://b-and-b-india.netlify.app/tissue">Tissue Adhesive</a></li>
-              </ul>
-            </div>
-
-            <!-- COLUMN 3 -->
-            <div class="mega-column column-3" id="col3">
-              <h4>Implants</h4>
-              <ul>
-                <li data-img="duravit-ev"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design1">DURAVIT
-                    EV</a></li>
-                <li data-img="duravit-3p"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design2">DURAVIT
-                    3P</a></li>
-                <li data-img="duravit-wide"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design3">DURAVIT
-                    Wide</a></li>
-                <li data-img="duravit-pterygo"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design4">DURAVIT
-                    Pterygo</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design5">DURAVIT
-                    Slim</a></li>
-                <li data-img="duravit-slim"><a href="https://b-and-b-india.netlify.app/uniqueimplant#design6">DURAVIT
-                    Mini</a></li>
-              </ul>
-            </div>
-
-            <!-- IMAGES -->
-            <div class="mega-images">
-              <img id="img1" src="./assets/imgs/di-1.webp" />
-              <img id="img2" src="./assets/imgs/di-2.jpg" />
-            </div>
+        <ul class="nav-main-menu">
+          <div class="logo">
+            <img src="./assets/imgs/marks-biotech-logo 1.webp" alt="Marks Biotech"  loading="lazy" />
           </div>
-        </li>
-
-        <li><a href="https://b-and-b-india.netlify.app/conexaconnection">Prosthetics</a></li>
-
-        <!-- ================= Regenerative ================= -->
-        <li class="has-mega mega-regenerative">
-          Regenerative Products<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <!-- <h4>Bonegraft</h4> -->
-              <ul>
-                <li><a href="./allograft.html">Allograft</a></li>
-                <li><a href="./xenograft.html">Xenograft</a></li>
-                <li><a href="./xenograft.html#collagen">Collagen Membrane</a></li>
-              </ul>
-            </div>
-            <div class="mega-images">
-              <img src="./assets/imgs/g-1.jpg" />
-              <img src="./assets/imgs/g-2.jpg" />
-            </div>
-          </div>
-        </li>
-
-        <!-- ================= Robotic ================= -->
-        <li class="has-mega mega-robotic">
-          Robotic Navigation<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-images">
-              <img src="./assets/imgs/r-1.jpg" />
-              <img src="./assets/imgs/3.0.png" />
-            </div>
-            <div class="mega-column">
-              <h4>Navident</h4>
-              <ul>
-                <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-                <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-
-        <li><a href="https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-
-
-        <li class="has-mega mega-resources">
-          Resources<i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <ul>
-                <li><a href="./events.html">Education</a></li>
-                <li><a href="./blog.html">Blogs</a></li>
-                <li><a href="./careers.html">Careers</a></li>
-                <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
-                
-
-
-              </ul>
-            </div>
-
-          </div>
-        </li>
-        <li><a href="./about.html">About Us</a></li>
-      </ul>
-
-    </div>
-  </header>
-
-
-
-    <section class="top-banner-allo">
-      <div>
-        <h1>ROCKY MOUNTAIN TISSUE BANK - USA<br /><span>ALLOGRAFT</span></h1>
-      </div>
-    </section>
-
-    <section class="hero">
-      <div class="hero-img">
-        <img src="assets/imgs/Rectangle 251.png" alt="Allograft Pack" />
-      </div>
-
-      <div class="hero-text">
-        <h3>INDICATIONS</h3>
-        <p>
-          Our Processing provides you the greatest assurance of allograft
-          quality and safety.
-        </p>
-
-        <ul>
-          <li>Sinus Augmentation</li>
-          <li>Sinus Lift</li>
-          <li>On-Lay Grafts</li>
-          <li>Periodontal Defects</li>
-          <li>Segmental Osteotomies</li>
-          <li>Tunnel Grafting</li>
-          <li>Socket Preservation</li>
-          <li>Block Grafting</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PRODUCT BLOCK -->
-    <section class="product-block">
-      <div class="text">
-        <h3>CANCELLOUS PARTICULATE VIALS</h3>
-        <p>
-          Irradiated Allogenic Cancellous Bone and Marrow Particulate Randomly
-          sized.
-        </p>
-
-        <ul>
-          <li>RM-Canpar 0.25gm</li>
-          <li>RM-Canpar 0.50gm</li>
-          <li>RM-Canpar 1.0gm</li>
-          <li>RM-Canpar 2.0gm</li>
-          <li>RM-Canpar 3.0gm</li>
-        </ul>
-      </div>
-
-      <div class="img">
-        <img src="assets/imgs/Rectangle 253.png" alt="Cancellous" />
-      </div>
-    </section>
-
-    <section class="product-block reverse">
-      <div class="img">
-        <img src="assets/imgs/Rectangle 252.png" alt="Bone Block" />
-      </div>
-
-      <div class="text">
-        <h3>CORTICAL / CANCELLOUS “BONE BLOCKS”</h3>
-        <p>Irradiated Allogenic Cortical/Cancellous Bone Blocks.</p>
-
-        <ul>
-          <li>5 × 10 × 10 mm RM-BB</li>
-          <li>5 × 10 × 20 mm RM-BB</li>
-          <li>5 × 10 × 30 mm RM-BB</li>
-          <li>10 × 10 × 10 mm RM-BB</li>
-          <li>10 × 10 × 20 mm RM-BB</li>
-          <li>10 × 10 × 30 mm RM-BB</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="product-block">
-      <div class="text">
-        <h3>CORTICAL PARTICULATE VIALS – “BONE BLOCKS”</h3>
-        <p>
-          Irradiated Allogenic Crushed Cortical Particulate Randomly sized 2-3
-          mm
-        </p>
-
-        <ul>
-          <li>RM-CorPar 0.5g</li>
-          <li>RM-CorPar 1g</li>
-        </ul>
-      </div>
-
-      <div class="img">
-        <img src="assets/imgs/Rectangle 253.png" alt="Cortical" />
-      </div>
-    </section>
-
-    <!-- TABLE -->
-    <section class="table-wrapper">
-      <!-- ===== TOP SECTION ===== -->
-      <div class="top-card">
-        <div class="top-grid">
-          <!-- Column 1 -->
-          <div class="col1">
-            <div class="col-head">Periodontal Defects Graft Amount</div>
-            <div class="row purple">Central Incisor <span>0.25g</span></div>
-            <div class="row gray">Lateral Incisor <span>0.25g</span></div>
-            <div class="row purple">Canine <span>0.25g</span></div>
-            <div class="row gray">1st & 2nd Premolar <span>0.25g</span></div>
-            <div class="row purple">1st & 2nd Molar <span>0.5g</span></div>
-            <div class="row gray">3rd Molar <span>0.5g</span></div>
-          </div>
-
-          <!-- Column 2 -->
-          <div class="col">
-            <div class="col-head">Extraction Sites Graft Amount</div>
-            <div class="row purple">Central Incisor <span>0.5g</span></div>
-            <div class="row gray">Lateral Incisor <span>0.25g</span></div>
-            <div class="row purple">Canine <span>0.5g</span></div>
-            <div class="row gray">1st & 2nd Premolar <span>0.5g</span></div>
-            <div class="row purple">1st & 2nd Molar <span>1g</span></div>
-            <div class="row gray">3rd Molar <span>1g</span></div>
-          </div>
-
-          <!-- Column 3 -->
-          <div class="col logo-col">
-            <div class="col-head">Sinus Grafts</div>
-            <div class="sinus-text row purple">Each Sinus 1 to 3g</div>
-            <div class="top-logo">
-              <img src="./assets/imgs/rmtb-v.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== BOTTOM SECTION ===== -->
-      <!-- ===== BOTTOM SECTION ===== -->
-      <div class="bottom-card">
-        <div class="bottom-title">Rocky Mountain Tissue Bank</div>
-
-        <div class="bottom-grid">
-          <!-- TABLE LEFT -->
-          <div class="bottom-table">
-            <div class="bottom-head" colspan="3">Changing Grams to CC’s</div>
-
-            <div class="b-row gray">0.25g</div>
-            <div class="b-row gray">0.5cc</div>
-
-            <div class="b-row orange">0.5g</div>
-            <div class="b-row orange">0.7 – 1.0cc</div>
-
-            <div class="b-row gray">1g</div>
-            <div class="b-row gray">1.2 – 2.0cc</div>
-
-            <div class="b-row orange">1 to 3g</div>
-            <div class="b-row orange">2.5 – 5cc</div>
-          </div>
-
-          <!-- LOGO RIGHT -->
-          <div class="bottom-logo">
-            <div class="logo-text">
-              <img src="./assets/imgs/rmtb-o.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INSTRUCTIONS -->
-    <section class="instructions">
-      <h3>
-        INSTRUCTIONS FOR USE & STORAGE WITH COMPLIANCE – MANDATORY REQUIREMENTS
-      </h3>
-      <ul>
-        <li>
-          In the Rocky Mountain Tissue Bank processing, protocol, every effort
-          is made to ensure the safety of our tissue. However, current
-          technologies may not preclude the transmission of infectious agents.
-        </li>
-
-        <li>
-          The use of this tissue is limited to hospitals, physicians, dentists
-          or other qualified medical professionals.
-        </li>
-        <li>
-          Allograft has been irradiated with betweeen 25 kGy and 38 kGy of
-          irradiation.
-        </li>
-        <li> Do Not Re-sterilize.</li>
-        <li>
-          It is the responsibility of the transplant facility and/or the
-          clinician to maintain the allograft in the appropriate storage
-          conditions prior to transplantation.
-        </li>
-        <li>
-          The Particulate grafts transport tube should be opened and inner
-          sterilized vial placed in sterile surgical field; or the Bone Block
-          outer pouch is opened and inner pouch is placed in sterile field.
-        </li>
-        <li>
-          Once the container seal has been compromised, the tissue shall be
-          either transplanted or discarded.
-        </li>
-        <li>No Special Handling is required.</li>
-        <li>
-          No additional preparation is necessary for transplantation, such as
-          diluting or reconstitution.
-        </li>
-        <li>For Single Patient Use Only.</li>
-      </ul>
-    </section>
-
-   
-  <footer class="about-footer">
-    <!-- TOP -->
-    <div class="about-footer-top">
-      <div class="about-footer-title">
-        <p>We are here to support You</p>
-        <h2>Connect with us</h2>
-      </div>
-
-<div class="about-subscribe-box">
-        <form action="" id="form1">
-        <input type="email" name="email" placeholder="Enter your mail id" />
-        <button class="subsc" type="submit">Subscribe</button></form>
-      </div>
-    </div>
-
-    <hr />
-
-    <!-- BOTTOM -->
-    <div class="footer-content">
-      <!-- QUICK LINKS -->
-      <div class="footer-col">
-        <h4>Quick links</h4>
-        <ul>
           <li><a href="./index.html">Highlights</a></li>
-          <li><a href="./about.html">About us</a></li>
-          
-          <li><a href="https://marksbiotech.com/micronmapper/">MicronMapper</a></li>
-          
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./events.html">Event</a></li>
-          <li><a href="./careers.html">Careers</a></li>
-          
+
+          <!-- ================= Dental Implantology ================= -->
+          <li class="has-mega mega-dental">
+            Dental Implantology<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+
+            <div class="mega-menu">
+              <div class="mega-column column-2" id="col2">
+                <ul>
+                  <li data-img="heritage"><a href="https://bnbimplant.in/heritage">Heritage</a></li>
+                  <li id="unique" data-img="unique">
+                    <a href="#col3">Unique Design <i class="fa-solid fa-angle-right" aria-hidden="true"></i></a>
+                  </li>
+                  <li data-img="custom"><a href="https://bnbimplant.in/subperiosteal">Customized Implants</a></li>
+                  <li data-img="guided"><a href="https://bnbimplant.in/digitalsurgicalguide">Digital Guided Surgery</a></li>
+                  <li data-img="kits"><a href="https://bnbimplant.in/surgicalkit">Surgical Kits</a></li>
+                </ul>
+              </div>
+
+              <div class="mega-column column-3" id="col3">
+                <h4>Implants</h4>
+                <ul>
+                  <li data-img="duravit-ev"><a href="https://bnbimplant.in/uniqueimplant#design1">DURAVIT EV</a></li>
+                  <li data-img="duravit-3p"><a href="https://bnbimplant.in/uniqueimplant#design2">DURAVIT 3P</a></li>
+                  <li data-img="duravit-wide"><a href="https://bnbimplant.in/uniqueimplant#design3">DURAVIT Wide</a></li>
+                  <li data-img="duravit-pterygo"><a href="https://bnbimplant.in/uniqueimplant#design4">DURAVIT Pterygo</a></li>
+                  <li data-img="duravit-slim"><a href="https://bnbimplant.in/uniqueimplant#design5">DURAVIT Slim</a></li>
+                  <li data-img="duravit-slim"><a href="https://bnbimplant.in/uniqueimplant#design6">DURAVIT Mini</a></li>
+                </ul>
+              </div>
+
+              <div class="mega-images">
+                <img id="img1" src="./assets/imgs/di-1.webp" alt="Dental Implant 1" loading="lazy" />
+                <img id="img2" src="./assets/imgs/di-2.webp" alt="Dental Implant 2" loading="lazy" />
+              </div>
+            </div>
+          </li>
+
+          <li><a href="https://bnbimplant.in/conexaconnection">Prosthetics</a></li>
+
+          <!-- ================= Regenerative ================= -->
+          <li class="has-mega mega-regenerative">
+            Regenerative Products<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <ul>
+                  <li><a href="./allograft.html">Allograft-Rocky Mountain</a></li>
+                  <li><a href="./xenograft.html">Xenograft-NovoBone</a></li>
+                  <li><a href="./xenograft.html#collagen">Collagen Membrane-Equine</a></li>
+                  <li><a href="./tissue.html">Tissue Adhesive</a></li>
+                </ul>
+              </div>
+              <div class="mega-images">
+                <img src="./assets/imgs/g-1.webp" alt="Regenerative product 1"  loading="lazy" />
+                <img src="./assets/imgs/g-2.webp" alt="Regenerative product 2"  loading="lazy" />
+              </div>
+            </div>
+          </li>
+
+          <!-- ================= Robotic ================= -->
+          <li class="has-mega mega-robotic">
+            Robotic Navigation<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            <div class="mega-menu">
+              <div class="mega-images">
+                <img src="./assets/imgs/r-1.webp" alt="Navident robotic navigation" width="300" height="200" loading="lazy" />
+                <img src="./assets/imgs/3.0.webp" alt="Navident 3.0" width="300" height="200" loading="lazy" />
+              </div>
+              <div class="mega-column">
+                <h4>Navident</h4>
+                <ul>
+                  <li><a href="https://navident.in/">Navident 3.0</a></li>
+                  <li><a href="https://navidentevo.in/">Navident 4.0 EVO</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="https://micronmapper.in/">Photogrammetry</a></li>
+
+          <li class="has-mega mega-resources">
+            Resources<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <ul>
+                  <li><a href="./events.html">Education</a></li>
+                  <li><a href="./blog.html">Blogs</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li><a href="./scientific-evidence.html">Scientific Evidence</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
         </ul>
       </div>
+    </header>
 
-      <!-- PRODUCTS -->
-      <div class="footer-col">
-        <h4>Products</h4>
+    <main>
+
+      <section class="top-banner-allo">
+        <div>
+          <h1>ROCKY MOUNTAIN TISSUE BANK - USA<br /><span>ALLOGRAFT</span></h1>
+          <p style="text-align:center;font-size:22px;margin-bottom:20px;color:goldenrod;">
+            40+ Years of Clinical Success, Most Researched and Scientifically Proved Results.
+          </p>
+          <p style="text-align:center">(Not For Profit Organization)</p>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="hero-img">
+          <img
+            src="assets/imgs/Rectangle 251.webp"
+            srcset="assets/imgs/Rectangle 251.webp 600w"
+            sizes="(max-width: 600px) 100vw, 600px"
+            alt="Rocky Mountain Allograft Pack"
+           
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+
+        <div class="hero-text">
+          <h2>INDICATIONS</h2>
+          <p>Our Processing provides you the greatest assurance of allograft quality and safety.</p>
+          <ul>
+            <li>Sinus Augmentation</li>
+            <li>Sinus Lift</li>
+            <li>On-Lay Grafts</li>
+            <li>Periodontal Defects</li>
+            <li>Segmental Osteotomies</li>
+            <li>Tunnel Grafting</li>
+            <li>Socket Preservation</li>
+            <li>Block Grafting</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PRODUCT BLOCK -->
+      <section class="product-block">
+        <div class="text">
+          <h2>CANCELLOUS PARTICULATE VIALS</h2>
+          <p>Irradiated Allogenic Cancellous Bone and Marrow Particulate Randomly sized.</p>
+          <ul>
+            <li>RM-Canpar 0.25gm</li>
+            <li>RM-Canpar 0.50gm</li>
+            <li>RM-Canpar 1.0gm</li>
+            <li>RM-Canpar 2.0gm</li>
+            <li>RM-Canpar 3.0gm</li>
+          </ul>
+        </div>
+        <div class="img">
+          <img
+            src="assets/imgs/Rectangle 253.webp"
+            srcset="assets/imgs/Rectangle 253.webp 600w"
+            sizes="(max-width: 600px) 100vw, 600px"
+            alt="Cancellous Particulate Vials"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="product-block reverse">
+        <div class="img">
+          <img
+            src="assets/imgs/Rectangle 252.webp"
+            srcset="assets/imgs/Rectangle 252.webp 600w"
+            sizes="(max-width: 600px) 100vw, 600px"
+            alt="Cortical Cancellous Bone Blocks"
+            loading="lazy"
+          />
+        </div>
+        <div class="text">
+          <h2>CORTICAL / CANCELLOUS "BONE BLOCKS"</h2>
+          <p>Irradiated Allogenic Cortical/Cancellous Bone Blocks.</p>
+          <ul>
+            <li>5 × 10 × 10 mm RM-BB</li>
+            <li>5 × 10 × 20 mm RM-BB</li>
+            <li>5 × 10 × 30 mm RM-BB</li>
+            <li>10 × 10 × 10 mm RM-BB</li>
+            <li>10 × 10 × 20 mm RM-BB</li>
+            <li>10 × 10 × 30 mm RM-BB</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="product-block">
+        <div class="text">
+          <h2>CORTICAL PARTICULATE VIALS – "BONE BLOCKS"</h2>
+          <p>Irradiated Allogenic Crushed Cortical Particulate Randomly sized 2-3 mm</p>
+          <ul>
+            <li>RM-CorPar 0.5g</li>
+            <li>RM-CorPar 1g</li>
+          </ul>
+        </div>
+        <div class="img">
+          <img
+            src="assets/imgs/Rectangle 253.webp"
+            srcset="assets/imgs/Rectangle 253.webp 600w"
+            sizes="(max-width: 600px) 100vw, 600px"
+            alt="Cortical Particulate Vials"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <!-- TABLE -->
+      <section class="table-wrapper">
+        <div class="top-card">
+          <div class="top-grid">
+            <div class="col1">
+              <div class="col-head">Periodontal Defects Graft Amount</div>
+              <div class="row purple">Central Incisor <span>0.25g</span></div>
+              <div class="row gray">Lateral Incisor <span>0.25g</span></div>
+              <div class="row purple">Canine <span>0.25g</span></div>
+              <div class="row gray">1st &amp; 2nd Premolar <span>0.25g</span></div>
+              <div class="row purple">1st &amp; 2nd Molar <span>0.5g</span></div>
+              <div class="row gray">3rd Molar <span>0.5g</span></div>
+            </div>
+
+            <div class="col">
+              <div class="col-head">Extraction Sites Graft Amount</div>
+              <div class="row purple">Central Incisor <span>0.5g</span></div>
+              <div class="row gray">Lateral Incisor <span>0.25g</span></div>
+              <div class="row purple">Canine <span>0.5g</span></div>
+              <div class="row gray">1st &amp; 2nd Premolar <span>0.5g</span></div>
+              <div class="row purple">1st &amp; 2nd Molar <span>1g</span></div>
+              <div class="row gray">3rd Molar <span>1g</span></div>
+            </div>
+
+            <div class="col logo-col">
+              <div class="col-head">Sinus Grafts</div>
+              <div class="sinus-text row purple">Each Sinus 1 to 3g</div>
+              <div class="top-logo">
+                <img src="./assets/imgs/rmtb-v.webp" alt="Rocky Mountain Tissue Bank Logo"  loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-card">
+          <div class="bottom-title">Rocky Mountain Tissue Bank</div>
+          <div class="bottom-grid">
+            <div class="bottom-table">
+              <div class="bottom-head" colspan="3">Changing Grams to CC's</div>
+              <div class="b-row gray">0.25g</div>
+              <div class="b-row gray">0.5cc</div>
+              <div class="b-row orange">0.5g</div>
+              <div class="b-row orange">0.7 – 1.0cc</div>
+              <div class="b-row gray">1g</div>
+              <div class="b-row gray">1.2 – 2.0cc</div>
+              <div class="b-row orange">1 to 3g</div>
+              <div class="b-row orange">2.5 – 5cc</div>
+            </div>
+
+            <div class="bottom-logo">
+              <div class="logo-text">
+                <img src="./assets/imgs/rmtb-o.webp" alt="Rocky Mountain Tissue Bank Orange Logo" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INSTRUCTIONS -->
+      <section class="instructions">
+        <h2>INSTRUCTIONS FOR USE &amp; STORAGE WITH COMPLIANCE – MANDATORY REQUIREMENTS</h2>
         <ul>
-          <li><a href="https://b-and-b-india.netlify.app/uniqueimplant">Dental implants</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/surgicalkit">Free hand Surgical</a></li>
-          <li><a href="https://b-and-b-india.netlify.app/digitalsurgicalguide">Computer Guided Surgery</a></li>
-          <li><a href="./allograft.html">Allograft</a></li>
-          <li><a href="./xenograft.html">Xenograft</a></li>
-          <li><a href="https://marksbiotech.com/navident-3.0">Navident 3.0</a></li>
-          <li><a href="https://marksbiotech.com/navident-4.0/">Navident 4.0 EVO</a></li>
-          <li><a href=".https://marksbiotech.com/micronmapper/">Photogrammetry</a></li>
-          
-          
+          <li>In the Rocky Mountain Tissue Bank processing protocol, every effort is made to ensure the safety of our tissue. However, current technologies may not preclude the transmission of infectious agents.</li>
+          <li>The use of this tissue is limited to hospitals, physicians, dentists or other qualified medical professionals.</li>
+          <li>Allograft has been irradiated with between 25 kGy and 38 kGy of irradiation.</li>
+          <li>Do Not Re-sterilize.</li>
+          <li>It is the responsibility of the transplant facility and/or the clinician to maintain the allograft in the appropriate storage conditions prior to transplantation.</li>
+          <li>The Particulate grafts transport tube should be opened and inner sterilized vial placed in sterile surgical field; or the Bone Block outer pouch is opened and inner pouch is placed in sterile field.</li>
+          <li>Once the container seal has been compromised, the tissue shall be either transplanted or discarded.</li>
+          <li>No Special Handling is required.</li>
+          <li>No additional preparation is necessary for transplantation, such as diluting or reconstitution.</li>
+          <li>For Single Patient Use Only.</li>
         </ul>
+      </section>
+
+    </main>
+
+    <footer class="about-footer">
+      <div class="about-footer-top">
+        <div class="about-footer-title">
+          <p>We are here to support You</p>
+          <h2>Connect with us</h2>
+        </div>
+        <div class="about-subscribe-box">
+          <form action="" id="form1">
+            <input type="email" name="email" placeholder="Enter your mail id" aria-label="Email address for newsletter" />
+            <button class="subsc" type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
 
-      <!-- ADDRESS -->
-      <div class="footer-col address">
-        <h4>Address</h4>
+      <hr />
 
-        <p class="he-red">Operation and Communication Address</p>
-        <p>
-          84, 1st floor, Thirupathy Nagar,<br />
-          Mainroad, 1st Cross street, <br />
-          Valasaravakkam, Chennai-600087.
-        </p>
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="./index.html">Highlights</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./events.html">Event</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+        </div>
 
-        <p class="he-red">Registered Office Address</p>
-        <p>
-          104/5, 6th street, s-1, 2nd floor, The Brown CLS Bulding, Ratha
-          Avenue, Valasaravakam, Chennai-600087.
-        </p>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="https://bnbimplant.in/uniqueimplant">B&amp;B Dental Implants Italy</a></li>
+            <li><a href="https://bnbimplant.in/surgicalkit">B&amp;B Surgical Kits</a></li>
+            <li><a href="https://bnbimplant.in/digitalsurgicalguide">Computer Guided Surgery</a></li>
+            <li><a href="./allograft.html">Rocky Mountain Allograft</a></li>
+            <li><a href="./xenograft.html">NovoBone Xenograft</a></li>
+            <li><a href="./xenograft.html#collagen">T-Collagen Membrane</a></li>
+            <li><a href="./tissue.html">Tissue Adhesive</a></li>
+            <li><a href="https://navident.in/">Navident 3.0</a></li>
+            <li><a href="https://navidentevo.in/">Navident 4.0 EVO</a></li>
+            <li><a href="https://micronmapper.in/">MicronMapper</a></li>
+          </ul>
+        </div>
 
+        <div class="footer-col address">
+          <h4>Address</h4>
+          <p class="he-red">Operation and Communication Address</p>
+          <p>84, 1st floor, Thirupathy Nagar,<br />Mainroad, 1st Cross street,<br />Valasaravakkam, Chennai, India -600087.</p>
+          <p class="he-red">Registered Office Address</p>
+          <p>104/5, 6th Street, S-1, 2nd floor, The Brown CLS Building, Radha Avenue, Valasaravakam, Chennai, India -600087.</p>
+        </div>
 
+        <div class="footer-col logo-map">
+          <img src="assets/imgs/marks-biotech-logo 1.webp" alt="Marks Biotech Logo" class="logo" width="160" height="48" loading="lazy" />
+          <p class="contact">📞 +91 44 485 93250</p>
+          <p class="contact">📞 +91 9819893250, +91 9840320250</p>
+          <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border:0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Marks Biotech location on Google Maps"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING ELEMENTS -->
+    <div class="floating-container">
+      <div class="event-box">
+        <h3 id="eventName"></h3>
+        <div class="event-details">
+          <p id="eventDate"></p>
+          <p id="eventTime"></p>
+          <p id="eventLocation"></p>
+        </div>
+        <div class="floating-btn-con">
+          <a href="" class="view-floating-img">View Details</a>
+          <button id="openFormBtn">Register Now</button>
+        </div>
+        <div class="float-event-close">
+          <button id="closeEventBtn">✖</button>
+        </div>
       </div>
 
-      <!-- LOGO + MAP -->
-      <div class="footer-col logo-map">
+      <a
+        href="https://wa.me/919819893250"
+        id="whatsappBtn"
+        class="whatsapp-btn"
+        aria-label="Chat with Marks Biotech on WhatsApp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span class="wave"></span>
+        <span class="wave delay"></span>
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" loading="lazy" />
+      </a>
 
-        <img src="assets/imgs/marks-biotech-logo 1.png" alt="Marks Biotech Logo" class="logo" />
-        <p class="contact">📞 +91 44 485 93250</p>
-        <p class="contact">📞 +91 9819893250 ,+91 9840320250</p>
-        <p class="contact"><span>✉ </span>info@marksbiotech.com</p>
-        <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.861000188089!2d80.1749978!3d13.044518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bb26e13173%3A0x58681e3956ff7dbb!2sMarks%20Biotech%20Inc!5e0!3m2!1sen!2sin!4v1769035781529!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div id="eventToggleBtn" class="event-toggle-btn" role="button" tabindex="0" aria-label="Toggle upcoming events panel">Upcoming Events</div>
+    </div>
 
+    <!-- EVENT IMAGE POPUP -->
+    <div id="eventImagePopup" class="popup" role="dialog" aria-modal="true" aria-label="Event image">
+      <div class="popup-content popup-image" style="max-width:600px">
+        <button id="closeImagePopup" class="close-btn" aria-label="Close event image">✖</button>
+        <img id="eventPopupImg" src="" alt="Event details" style="width:100%;border-radius:10px" loading="lazy" />
       </div>
     </div>
-  </footer>
-   <script src="./script2.js"></script>
+
+    <!-- POPUP FORM -->
+    <div id="popupForm" class="popup" role="dialog" aria-modal="true" aria-label="Event registration form">
+      <div class="popup-content">
+        <button id="closeForm" class="close-btn" aria-label="Close registration form">✖</button>
+        <h2>Register</h2>
+        <form id="leadForm">
+          <input name="name" placeholder="Full Name *" required aria-label="Full Name" />
+          <select name="title" aria-label="Title">
+            <option>Dr.</option>
+          </select>
+          <input name="email" type="email" placeholder="Email *" required aria-label="Email address" />
+          <input name="mobile" placeholder="Mobile Number *" required aria-label="Mobile number" />
+          <select name="speciality" aria-label="Speciality">
+            <option>BDS</option>
+            <option>MDS</option>
+          </select>
+          <input name="specialityOther" placeholder="Specify Specialty" aria-label="Other specialty" />
+          <select name="category" aria-label="Category">
+            <option>Private Practice</option>
+            <option>Students</option>
+          </select>
+          <input name="city" placeholder="City *" required aria-label="City" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script defer src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script defer src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script defer src="./script2.js"></script>
+
+    <script>
+      /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+      !function(a){"use strict";var b=function(b,c,d,e){var f,g=a.document,h=g.createElement("link");if(c)f=c;else{var i=(g.body||g.getElementsByTagName("head")[0]).childNodes;f=i[i.length-1]}var j=g.styleSheets;h.rel="stylesheet",h.href=b,h.media="only x",f.parentNode.insertBefore(h,c?f:f.nextSibling);var k=function(a){for(var b=h.href,c=j.length;c--;)if(j[c].href===b)return a();setTimeout(function(){k(a)})};return h.addEventListener?h.addEventListener("load",function(){this.media=d||"all"}):h.attachEvent&&h.attachEvent("onload",function(){h.media=d||"all"}),k(function(){e&&e(h)}),h};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+    </script>
 
   </body>
 </html>
-
-
